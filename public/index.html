@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Management</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hostel Management</h1>
+    <div class="card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="email" required />
+        <label>Password</label>
+        <input type="password" id="password" placeholder="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p>Admin: admin@hostel.com / admin123</p>
+      <p>Student: student@hostel.com / student123</p>
+    </div>
+
+    <div class="card" id="links" style="display:none;">
+      <h2>Dashboards</h2>
+      <button id="adminDash">Admin Dashboard</button>
+      <button id="studentDash">Student Dashboard</button>
+      <button id="roomsBtn">Rooms</button>
+      <button id="complaintsBtn">Complaints</button>
+      <button id="announcementsBtn">Announcements</button>
+      <button id="paymentsBtn">Payments</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <pre id="output" class="card"></pre>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
